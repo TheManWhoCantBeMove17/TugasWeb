@@ -1,0 +1,169 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body background="soul.jpg" style="background-repeat:no-repeat ; background-size:cover;">
+<center>
+    <div class="w3-container w3-text-white">
+        <h1><b>GANG ALIT GARAGE</b></h1>
+    </div>
+
+    <div class="w3-panel w3-purple w3-round-xlarge">
+        <center>
+            <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Sejarah')">Sejarah</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Kelebihan')">Kelebihan</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Hasil kerja')">Hasil Kerja</button>
+			<div class="w3-dropdown-hover">
+            <button class="w3-button">Informasi</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<button class="w3-bar-item w3-button" onclick="openKota('Lokasi')">Lokasi</button>
+					<button class="w3-bar-item w3-button" onclick="openKota('Nomor kontak')">Nomor kontak</button>
+					<button class="w3-bar-item w3-button" onclick="openKota('Instagram')">Instagram</button>
+				</div>
+			</div>
+            <button class="w3-bar-item w3-button" onclick="openKota('kalkulator')">Kalkulator CC</button>
+					<button class="w3-bar-item w3-button" onclick="openKota('profile')">My Profile</button>
+        </center>
+    </div>
+
+    <div id="Sejarah" class="w3-container kota w3-animate-top w3-purple" style="display:none">
+        <h2><b>Sejarah</b></h2>
+            <hr>
+            <br>
+            <p>Gang Alit Garage merupakan nama yang terkilas karena lokasi bengkel yang awalnya berada pada samping rumah di dalam gang yang sangat kecil.
+               Namun Bukan berarti bengkel kecil tidak bisa berkembang, justru inilah titik awal untuk menjadi lebih baik.
+            </p>
+            <p>Gang Alit Garage terdiri dari 2 orang mekanik yang bernama Maswan (A Wawan) dan Mang Ableh (A Iin), mereka merupakan otak dari Bengkel Gang Alit</p>
+    </div>
+
+    <div id="Kelebihan" class="w3-container kota w3-animate-bottom w3-purple" style="display:none">
+        <h2>Apa aja sih Kelebihan yang dimiliki?</h2>
+            <h3>1. Kejujuran</h3>
+            <p>Kejujuran menjadi moto utama di bengkel ini dan hal yang membuat bengkel ini dipercaya orang orang, karena menurut mekanik dan agama pun jika ingin mencari rezeki dengan halal harus jujur.</p>
+            <p>Lalu, Bagaimana jika tidak jujur ? akan banyak orang yang tidak percaya dan memilih tidak akan kembali ke bengkel karena merasa kepercayaan mereka di khianati juga rezeki yang di dapat tidak halal.</p>
+            <h3>2. Mempunyai Alat dan Mesin Sendiri</h3>
+            <p>Gang Alit Garage mempunyai alat yang lengkap dikarenakan bengkel ini bukan hanya menerima service namun hingga boreup pun bisa oleh karena itu harus di dukung dengan mesin yang lengkap juga seperti : Mesin bubut, Copy cam, Milling dan lain lain.
+            </p>
+            <h3>3. Mekanik yang berpengalaman</h3>
+            <p>Salah satu kelebihan yang dimiliki bengkel gang alit adalah mekanik yang berpengalaman di semua jenis motor mulai dari 2tak, matic jepang, matic italy hingga 4tak bebek maupun sport juga bisa, selain jam terbang yang mempengaruhi, keinginan belajar atau riset lebih baik jadi faktor berpengalamannya mekanik Gang Alit ini.
+            </p>
+    </div>
+
+    <div id="Hasil kerja" class="w3-container kota w3-animate-left w3-purple" style="display:none">
+        <h2>Hasil kerja Gang Alit Garage</h2>
+        <img src="hasil1.jpg">
+		<p><img src="hasil2.jpg"></p>
+		<p><img src="hasil3.jpg"></p>
+    </div>
+	
+	<div id="Lokasi" class="w3-container kota w3-animate-left w3-purple" style="display:none">
+        <h2>Lokasi Gang Alit Garage</h2>
+        <p>Lokasi Gang alit Garage berada di Jl. Panyawungan No.46, RT.005/RW.003, Cileunyi Wetan, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 40622 atau bisa Searching Gang Alit Garage pada Google Maps (https://maps.app.goo.gl/8HbayLCm3G7z1akg8).</p>
+    </div>
+	
+	<div id="Nomor kontak" class="w3-container kota w3-animate-left w3-purple" style="display:none">
+        <h2>Nomor Kontak Gang Alit Garage</h2>
+        <img src="kontak.jpg">
+		<p>+62 898-6707-378 - Maswan</p>
+    </div>
+	
+	<div id="Instagram" class="w3-container kota w3-animate-left w3-purple" style="display:none">
+        <h2>Instagram Gang Alit Garage</h2>
+        <img src="ig1.png" width="50%">
+		<p><img src="ig2.png" width="50%></p>
+    </div>
+
+    ">
+
+    </div>
+    
+    <div id="profile" class="w3-container kota w3-animate-right w3-text-white" style="display:none">
+        <img src="me.jpg">
+        <hr>
+        <h2>Naufal Fauzan Nurroni</h2>
+        <h2>10123455</h2>
+        <h2>IF-11</h2>
+    </div>
+	
+	<div id="kalkulator" class="w3-container kota w3-animate-zoom" style="display: none;">
+        <form name="form1">
+            <script>
+                function hitung()
+					{
+						var piston=document.form1.piston.value;
+						var stroke=document.form1.stroke.value;
+						var buret=document.form1.buret.value;
+						var busi=document.form1.busi.value;
+						var silinder=document.form1.silinder.value;
+						
+						var cc = (Math.PI / 4) * Math.pow(piston, 2) * stroke;
+						document.form1.cc.value=cc
+					
+						var cc=document.form1.cc.value;
+						var kompresi=buret-busi+silinder/busi
+						document.form1.kompresi.value=kompresi
+                    
+                    
+					}   
+				function reset()
+					{
+						reset
+					}
+            </script>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="css/w3.css">
+        
+            <div class="w3-containe w3-animate-zoom">
+                <div class="w3-panel w3-red w3-card-4">
+                    <center>
+                        <p>
+                            <h3>KALKULATOR HITUNG CC DAN KOMPRESI DINAMIS</h3>
+                        </p>
+                    </center>
+                </div>
+                <div class="w3-panel w3-cyan w3-card-4">
+                    <center>
+                        <table>
+							<center><tr><td>Hitung CC</tr></center>
+							<tr><td>
+							<tr><td>Diamater Piston<td><input class="w3-input" "w3-text" name="piston" style="width:90%"><td>MM
+							<tr><td>Panjang Stroke<td><input class="w3-input" "w3-text" name="stroke" style="width:90%"><td>MM
+							<tr><td colspan=2><hr>
+							<center><tr><td>Hitung Komresi dengan buret</center>
+							<tr><td>Volume Cairan Buret<td><input class="w3-input" type="text" name="buret"><td>CC
+							<tr><td>Volume Drat Busi<td><input class="w3-input" type="text" name="busi"><td>CC
+							<tr><td>Volume Silinder<td><input class="w3-input" type="text" name="silinder"><td>CC
+							<tr><td colspan=2><hr>
+                            <tr><td>Total CC<td><input class="w3-input" type="text" name="cc"><td>CC
+                            <tr><td>Rasio Kompresi<td><input class="w3-input" type="text" name="kompresi"></tr>
+                        </table>
+                    </center>
+                </div>
+                <div class="w3-panel">
+                    <p>
+                        <center>
+                            <input type="button" class="w3-btn w3-purple" value="Proses" onclick="hitung()">
+                            <input type="button" class="w3-btn w3-purple" value="Reset" onclick="hapus()">
+                        </center>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+       function openKota(namakota) {
+        var i;
+        var x = document.getElementsByClassName("kota");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        }
+        document.getElementById(namakota).style.display = "block";
+       }
+    </script>
+       
+</center>
+</body>
+</html>
